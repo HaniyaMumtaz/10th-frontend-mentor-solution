@@ -1,0 +1,98 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   font-family: 'Big Shoulders';
+    letter-spacing: 1px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.orange , .blue , .green {
+    max-width: 130px;
+    max-height: 250px;
+    width: 130px;
+    height: 250px;
+    padding: 50px;
+    display: inline;
+}
+
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blue{
+    background-color:  hsl(184, 100%, 22%);
+}
+
+.green{
+    background-color: hsl(179, 100%, 13%);
+     border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img{
+    width: 40px;
+}
+
+h1{
+    color:  hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+
+p{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+}
+
+button{
+    max-width: 110px;
+    max-height: 30px;
+    width: 110px;
+    height: 30px;
+    border-radius: 30px;
+    border-style: none;
+    margin: 40px;
+    margin-left: 0px;
+    background-color:  hsl(0, 0%, 95%);
+}
+
+.orange button{
+    color:  hsl(31, 77%, 52%);
+}
+
+.blue button{
+    color:  hsl(184, 100%, 22%);
+}
+
+.green button{
+    color: hsl(179, 100%, 13%); 
+}
+
+.attribution {
+     font-size: 11px;
+     text-align: center;
+    margin-top: 20px;
+
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+    @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orange, .blue, .green {
+    border-radius: 10px;
+  }
+}
